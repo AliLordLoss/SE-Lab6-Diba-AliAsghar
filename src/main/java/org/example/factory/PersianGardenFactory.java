@@ -1,6 +1,6 @@
 package org.example.factory;
 
-public class PersianGardenFactory extends AbstractFactory {
+public class PersianGardenFactory extends AbstractGardenFactory {
 
     @Override
     public AbstractTree createTree() {
