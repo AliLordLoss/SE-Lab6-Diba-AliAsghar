@@ -1,3 +1,6 @@
+import org.example.builder.Builder;
+import org.example.builder.Director;
+import org.example.builder.Weapon;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,8 +12,8 @@ public class BuilderTest {
 
         director.constructBow();
 
-        Weapon bow = bulider.getResult();
+        Weapon bow = builder.getResult();
 
-        Assertions.assertTrue(bow instanceof Bow && bow.getDamage() == 10 && bow.getDurability() == 5);
+        Assertions.assertTrue(bow.isRanged() && bow.getDamage() == 10 && bow.getDurability() == 5);
     }
 }
