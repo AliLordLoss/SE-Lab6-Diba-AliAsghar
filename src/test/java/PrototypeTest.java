@@ -1,3 +1,4 @@
+import org.example.prototype.HelicopterPrototype;
 import org.example.prototype.PlanePrototype;
 import org.example.prototype.Prototype;
 import org.junit.jupiter.api.Assertions;
@@ -16,7 +17,7 @@ public class PrototypeTest {
 
     @Test
     void testHelicopterPrototype() {
-        Prototype helicopter = new HeliCopterPrototype("Black Hawk");
+        Prototype helicopter = new HelicopterPrototype("Black Hawk");
         Prototype helicopterCopy = helicopter.clone();
 
         Assertions.assertTrue(!Objects.equals(helicopter, helicopterCopy) && helicopter.getName().equals(helicopterCopy.getName()));
