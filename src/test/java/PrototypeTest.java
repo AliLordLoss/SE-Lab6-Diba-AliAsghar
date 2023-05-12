@@ -13,4 +13,12 @@ public class PrototypeTest {
 
         Assertions.assertTrue(!Objects.equals(plane, planeCopy) && plane.getName().equals(planeCopy.getName()));
     }
+
+    @Test
+    void testHelicopterPrototype() {
+        Prototype helicopter = new HeliCopterPrototype("Black Hawk");
+        Prototype helicopterCopy = helicopter.clone();
+
+        Assertions.assertTrue(!Objects.equals(helicopter, helicopterCopy) && helicopter.getName().equals(helicopterCopy.getName()));
+    }
 }
