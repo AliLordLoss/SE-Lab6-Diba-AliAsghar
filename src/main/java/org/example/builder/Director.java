@@ -12,4 +12,10 @@ public class Director {
         this.builder.setDurability(5);
         this.builder.setRanged(true);
     }
+
+    public void constructSword() {
+        this.builder.setDamage(8);
+        this.builder.setDurability(20);
+        this.builder.setRanged(false);
+    }
 }
