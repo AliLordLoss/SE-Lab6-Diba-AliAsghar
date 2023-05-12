@@ -16,4 +16,17 @@ public class BuilderTest {
 
         Assertions.assertTrue(bow.isRanged() && bow.getDamage() == 10 && bow.getDurability() == 5);
     }
+
+    @Test
+    void TestSwordBuilder() {
+        Builder builder = new Builder();
+        Director director = new Director(builder);
+
+        director.constructSword();
+
+        Weapon sword = builder.getResult();
+
+        Assertions.assertTrue(!sword.isRanged() && sword.getDamage() == 8 && sword.getDurability() == 20);
+
+    }
 }
