@@ -1,3 +1,5 @@
+import org.example.prototype.PlanePrototype;
+import org.example.prototype.Prototype;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
